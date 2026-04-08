@@ -1,112 +1,75 @@
-# Online Ticket Booking System
+# 🚀 Online Ticket Booking System
 
-A complete Java Swing desktop application for booking and managing tickets with user authentication and booking management features.
+## 🌐 Live Application
 
-## Project Team
+👉 Access the deployed app here:  
+https://online-ticket-booking-system-dsqbbzr7j8qdv8lkfdrwd7.streamlit.app/
 
-- Prasannashree B
+✅ This application is publicly deployed using Streamlit Cloud and can be accessed from anywhere.
+
+---
+
+## 📌 Project Overview
+
+This project is a hybrid application that demonstrates:
+
+- 🖥️ Java Swing Desktop Application (Core System)
+- 🌐 Streamlit Web Application (User Interface & Deployment)
+
+It allows users to register, log in, book tickets, cancel bookings, and view their booking history.
+
+---
+
+## 👥 Project Team
+
+- Prasannashree B  
 - Aswathi H  
-- Devna N
-- Ameena Khatoon
+- Devna N  
+- Ameena Khatoon  
 
-## Features
+---
 
-- User registration and login system
-- Dashboard with navigation menu
-- Ticket booking with fare calculation
-- Ticket cancellation with confirmation
-- View available tickets
-- View user booking history
-- Real-time statistics display
+## 🚀 Features
 
-## Project Structure
+- 🔐 User Registration and Login  
+- 📊 Dashboard with key statistics  
+- 🎟️ Ticket Booking with fare calculation  
+- ❌ Ticket Cancellation  
+- 📄 View available ticket types  
+- 📚 View booking history  
+- 📈 Real-time metrics display  
+- 🌐 Public web access via Streamlit Cloud  
 
-### Core Classes
-- `Ticket.java` - Base ticket class with encapsulation
-- `PremiumTicket.java` - Inherits from Ticket, demonstrates polymorphism
-- `User.java` - User management with login validation
-- `Booking.java` - Booking information and relationships
-- `BookingSystem.java` - Core business logic and data management
+---
 
-### GUI Classes
-- `Main.java` - Application entry point
-- `LoginUI.java` - Login and registration interface
-- `DashboardUI.java` - Main dashboard with navigation
-- `BookingUI.java` - Ticket booking interface
-- `CancelUI.java` - Ticket cancellation interface
+## 🏗️ Project Structure
 
-## How to Run
+### 🔹 Core Classes (Java)
 
-1. Compile all Java files:
-   ```bash
-   javac *.java
-   ```
+- `Ticket.java` – Base ticket class  
+- `PremiumTicket.java` – Inheritance example  
+- `User.java` – User authentication  
+- `Booking.java` – Booking details  
+- `BookingSystem.java` – Business logic  
 
-2. Run the application:
-   ```bash
-   java Main
-   ```
+### 🔹 GUI Classes (Java Swing)
 
-## User Interaction Flow
+- `Main.java` – Entry point  
+- `LoginUI.java` – Login/Register UI  
+- `DashboardUI.java` – Dashboard  
+- `BookingUI.java` – Ticket booking  
+- `CancelUI.java` – Ticket cancellation  
 
-1. **Login/Register**: Users can create an account or login with existing credentials
-2. **Dashboard**: Main menu with access to all features
-3. **Book Ticket**: Select ticket type, quantity, and view total fare
-4. **Cancel Ticket**: View bookings and cancel with confirmation
-5. **View Bookings**: Display all user bookings with details
+### 🔹 Streamlit Application
 
-## OOP Concepts Implemented
+- `app.py` – Web-based interface for ticket booking system  
 
-### Encapsulation
-- All classes have private fields with public getters/setters
-- Data validation in setter methods
-- Private helper methods in classes
+---
 
-### Inheritance
-- `PremiumTicket` extends `Ticket` base class
-- Inherits properties and methods from parent class
+## ▶️ How to Run
 
-### Polymorphism
-- `calculateFare()` method overridden in `PremiumTicket`
-- Dynamic method binding for fare calculation
+### 🖥️ Java Application
 
-### Abstraction
-- Service methods in `BookingSystem` hide implementation details
-- Clean separation between GUI and business logic
-
-## Exception Handling
-
-- Input validation for empty fields
-- Number format exception handling
-- User-friendly error messages with JOptionPane
-- Graceful error recovery
-
-## GUI Components Used
-
-- `JFrame` - Main application windows
-- `JPanel` - Container for components
-- `JButton` - Action buttons with event handling
-- `JLabel` - Text display
-- `JTextField` - Text input
-- `JPasswordField` - Secure password input
-- `JComboBox` - Dropdown selections
-- `JTabbedPane` - Tabbed interface
-- `JOptionPane` - Dialog boxes
-
-## Layout Managers
-
-- `BorderLayout` - Main window layout
-- `GridLayout` - Form layouts
-- `FlowLayout` - Button arrangements
-
-## Data Storage
-
-- Uses `ArrayList` for in-memory storage
-- No external database required
-- Data persists during application runtime
-
-## System Requirements
-
-- Java 8 or higher
-- Swing library (included with JDK)
-- Windows/Linux/MacOS with GUI support
+```bash
+javac *.java
+java Main
